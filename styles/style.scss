@@ -1,0 +1,551 @@
+@import url('https://fonts.googleapis.com/css2?family=Just+Me+Again+Down+Here&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Just+Me+Again+Down+Here&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Long+Cang&display=swap');
+
+* {
+	margin: 0;
+	padding: 0;
+	border: 0;
+}
+
+*,
+*::before,
+*::after {
+	-webkit-box-sizing: border-box;
+	box-sizing: border-box;
+}
+
+:focus,
+:active {
+	outline: none;
+}
+
+a:focus,
+a:active {
+	outline: none;
+}
+
+nav,
+footer,
+header,
+aside {
+	display: block;
+}
+
+html,
+body {
+	height: 100%;
+	width: 100%;
+	font-size: 100%;
+	line-height: 1;
+	font-size: 14px;
+	-ms-text-size-adjust: 100%;
+	-webkit-text-size-adjust: 100%;
+}
+
+input,
+button,
+textarea {
+	font-family: inherit;
+}
+
+input::-ms-clear {
+	display: none;
+}
+
+button {
+	cursor: pointer;
+}
+
+button::-moz-focus-inner {
+	padding: 0;
+	border: 0;
+}
+
+a,
+a:visited {
+	text-decoration: none;
+}
+
+a:hover {
+	text-decoration: none;
+}
+
+ul li {
+	list-style: none;
+}
+
+img {
+	vertical-align: top;
+}
+
+h2,
+h3,
+h4,
+h5,
+h6 {
+	font-size: inherit;
+	font-weight: inherit;
+}
+
+[class*='__container'] {
+	width: 100%;
+	max-width: 1300px;
+}
+
+.wrapper {
+	position: relative;
+	overflow: hidden;
+}
+.header {
+	width: 100%;
+	display: flex;
+	justify-content: center;
+	z-index: 1;
+	background-color: #004aad;
+	&__container {
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+		margin-top: 20px;
+		padding: 0 20px;
+	}
+	&__logo {
+		font-family: 'Just Me Again Down Here', cursive;
+		font-weight: 400;
+		font-style: normal;
+		font-size: 83px;
+		color: #fff;
+	}
+	&__nav {
+		display: flex;
+		font-family: 'Just Me Again Down Here', cursive;
+		font-weight: 400;
+		font-style: normal;
+		font-size: 40px;
+		align-items: center;
+	}
+
+	&__links {
+		display: grid;
+		grid-template-columns: repeat(4, 1fr);
+		display: flex;
+		gap: 50px;
+		align-items: center;
+		justify-content: center;
+		height: auto;
+		margin-right: 30px;
+
+		a {
+			color: #fff;
+			align-self: flex-start;
+		}
+	}
+	&__btn {
+		background-color: #ff0000;
+		padding: 8px 10px 15px 10px;
+		font-size: 32px;
+		border-radius: 16px;
+		color: #fff;
+		flex-wrap: nowrap;
+	}
+}
+
+.hero {
+	display: flex;
+	justify-content: center;
+	background-color: #004aad;
+	position: relative;
+
+	&__bg {
+		position: absolute;
+		bottom: 0;
+		right: 0;
+		max-width: 34vw;
+		height: auto;
+	}
+	&__container {
+		color: #fff;
+		margin-top: 115px;
+		display: flex;
+		justify-content: center;
+		margin-bottom: 40px;
+	}
+	&__box {
+		position: relative;
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;
+		h1,
+		h2 {
+			font-size: 144px;
+			font-family: 'Just Me Again Down Here', cursive;
+			font-weight: 400;
+			font-style: normal;
+			display: flex;
+			justify-content: center;
+		}
+		h2 {
+			font-size: 76px;
+		}
+	}
+	&__links {
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		gap: 90px;
+		margin-top: 25px;
+	}
+	&__rectangle {
+		background-color: #fff;
+		opacity: 30%;
+		border-radius: 8px;
+		height: 40px;
+		margin-top: 25px;
+		max-width: 600px;
+		width: 100%;
+	}
+	&__item {
+		font-family: 'Just Me Again Down Here', cursive;
+		font-weight: 400;
+		font-style: normal;
+		display: flex;
+		justify-content: center;
+	}
+
+	&__little {
+		display: none;
+		position: absolute;
+		top: 0;
+		right: -40px;
+	}
+}
+.link-short {
+	display: none;
+}
+
+.youtube {
+	justify-self: end;
+}
+
+
+
+.description {
+	display: flex;
+	justify-content: center;
+	padding: 0 70px;
+	align-items: center;
+	&__picture {
+		padding-left: 80px;
+		display: flex;
+		align-items: center;
+		.circle {
+			background-color: #004aad;
+			height: 310px;
+			width: 310px;
+			border-radius: 50%;
+			overflow: hidden;
+			position: relative;
+			img {
+				position: absolute;
+				bottom: 0;
+			}
+		}
+	}
+	&__container {
+		display: flex;
+		justify-content: center;
+		a{
+			text-decoration: underline;
+			color: #000;
+		}
+		gap: 60px;
+	}
+	&__text {
+		margin: 60px 0 150px;
+		h1 {
+			display: flex;
+			justify-content: center;
+			font-family: 'Just Me Again Down Here', cursive;
+			font-weight: 400;
+			font-style: normal;
+			font-size: 83px;
+		}
+		p {
+			margin-top: 35px;
+			font-family: 'Long Cang', cursive;
+			font-weight: 400;
+			font-style: normal;
+			font-size: 36px;
+			text-align: center;
+		}
+	}
+}
+
+.hero__grid {
+	display: grid;
+	-ms-grid-columns: 1fr, 1fr, 1fr;
+	grid-template-columns: repeat(3, 1fr);
+	gap: 50px;
+}
+.mista-little {
+	display: none;
+}
+.howtobuy {
+	overflow: hidden;
+	&__container {
+		padding: 0 15px;
+		position: relative;
+		a{
+			text-decoration: underline;
+			color: #fff;
+		}
+		h1 {
+			font-family: 'Just Me Again Down Here', cursive;
+			font-weight: 400;
+			font-style: normal;
+			color: #fff;
+			font-size: 99px;
+			text-transform: uppercase;
+			margin: 20px 0 20px 0;
+		}
+		img {
+			position: absolute;
+			top: -10px;
+			right: -100px;
+		}
+	}
+	display: flex;
+	justify-content: center;
+	background-color: #004aad;
+	&__grid {
+		color: #fff;
+		display: grid;
+		grid-template-columns: repeat(3, auto); /* Три столбца равной ширины */
+		grid-gap: 45px;
+		.grid-item {
+			h1 {
+				font-family: 'Just Me Again Down Here', cursive;
+				font-weight: 400;
+				font-style: normal;
+				font-size: 44px;
+			}
+			p {
+				font-family: 'Long Cang', cursive;
+				font-weight: 400;
+				font-style: normal;
+				font-size: 30px;
+				height: 270px;
+			}
+		}
+		.item1 {
+			max-width: 418px;
+		}
+		.item2 {
+			max-width: 306px;
+		}
+		.item3 {
+			max-width: 408px;
+		}
+		.item4 {
+			max-width: 350px;
+			grid-column: 2 / 3;
+			word-wrap: break-word;
+		}
+	}
+}
+
+
+
+@media (max-width: 1030px) {
+	.mista-little {
+		display: block;
+	}
+	.header {
+		&__container {
+			flex-direction: column;
+		}
+	}
+	.hero__bg {
+		display: none;
+	}
+	.youtube {
+		width: 70px;
+	}
+	.hero__grid {
+		gap: 15px;
+		h1 {
+			font-size: 54px;
+		}
+		h2 {
+			font-size: 30px;
+		}
+	}
+	.hero__links {
+		margin: 0;
+	}
+	.howtobuy__grid {
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		
+	}
+	.description {
+		&__container {
+			flex-direction: column;
+			align-items: center;
+			padding: 25px 0;
+			gap: 0;
+		}
+		&__picture {
+			padding: 0;
+			width: 130px;
+			height: 130px;
+			.circle{
+				width: 130px;
+				height: 130px;
+			}
+			img{
+				width: 120px;
+				height: 120px;
+			}
+		}
+		&__text {
+			h1 {
+				font-size: 60px;
+			}
+			p {
+				font-size: 25px;
+			}
+		}
+	}
+}
+
+
+.fullscreen-image {
+	width: 100%;
+	justify-content: center;
+	display: flex;
+	height: auto;
+	padding: 0 10px;
+	img {
+		height: auto;
+		width: 100%;
+		max-width: 1300px;
+	}
+}
+.second {
+	margin-bottom: 80px;
+}
+.grid-container {
+	display: flex;
+	justify-content: center;
+	margin-bottom: 78px;
+}
+.grid-img {
+	display: grid;
+	grid-template-columns: repeat(2, 1fr);
+	justify-content: center;
+	gap: 50px;
+	max-width: 1300px;
+	width: auto;
+	height: auto;
+	padding: 0 10px;
+	img {
+		max-width: 100%; /* Делаем изображение максимально широким в своем контейнере */
+		height: auto;
+	}
+}
+
+.footer {
+	background-color: black;
+	display: flex;
+	justify-content: center;
+	&__container {
+		text-align: center;
+		padding: 70px 0 90px 0;
+		line-height: 70px;
+		p {
+			font-size: 44px;
+			font-family: 'Just Me Again Down Here', cursive;
+			font-weight: 400;
+			font-style: normal;
+			color: #fff;
+		}
+	}
+}
+@media screen and (max-width: 767px) {
+	.header__logo {
+		p {
+			margin-bottom: 15px;
+		}
+	}
+	.hero__container {
+		margin: 80px 0 40px;
+	}
+	.hero__box {
+		max-width: 330px;
+		width: 100%;
+		h2 {
+			margin-bottom: 60px;
+		}
+	}
+	.description {
+		padding: 0 15px;
+		
+	}
+	.howtobuy {
+		overflow: visible;
+		&__grid{
+			gap: 0;
+		}
+		&__container {
+			h1 {
+				font-size: 60px;
+				text-align: center;
+			}
+			img {
+				top: -140px;
+				right: -130px;
+			}
+		}
+		.grid-item {
+			max-width: 368px;
+			width: 100%;
+			gap: 0px;
+			margin-bottom: 50px;
+			p{
+				height: auto;
+			}
+			h1 {
+				font-size: 38px;
+			}
+			
+		}
+	}
+	.hero__links {
+		gap: 35px;
+	}
+	.header__links {
+		display: grid;
+		-ms-grid-columns: 1fr 1fr; /* Указываем каждую колонку отдельно */
+		grid-template-columns: repeat(2, auto);
+		gap: 35px;
+		margin: 0;
+	}
+	.link-long {
+		display: none;
+	}
+	.link-short {
+		display: block;
+	}
+	.footer {
+		&__container {
+			padding: 35px;
+			line-height: 45px;
+			p {
+				font-size: 30px;
+			}
+		}
+	}
+}
